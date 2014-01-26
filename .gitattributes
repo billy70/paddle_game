@@ -1,0 +1,16 @@
+# Set default behaviour, in case users don't have core.autocrlf set.
+* text=auto
+
+# Explicitly declare text files we want to always be normalized
+# and converted to native line endings on checkout.
+# These are the Ruby source code files.
+*.rb text
+
+# PXM is the native Pixelmator file format; it is a binary file
+# format and should not be modified, nor perform any diffs on them.
+# (Note that 'binary' is an alias for '-text -diff'.)
+*.pxm binary
+
+# PNG is a binary image file format; we use the 'exiftool' to do
+# the diffs to compare EXIF data, rather than a text or binary diff.
+*.png diff=exif
