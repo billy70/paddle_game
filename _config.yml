@@ -1,0 +1,8 @@
+title: Paddle game
+description: A Ruby version of the classic Pong video game.
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-modernist
+
+gems:
+  - jekyll-mentions
